@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watsher Mobile Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button id="hamburger" class="hamburger" aria-label="فتح القائمة">☰</button>
+      <div class="branding">
+        <h1>Watsher</h1>
+        <p>لوحة تحكم موبايل</p>
+      </div>
+      <div class="status-badge" id="statusBadge">جاهز</div>
+    </header>
+
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+      <div class="sidebar-header">
+        <div>
+          <h2>البنية الشجرية</h2>
+          <p>اختر فرعاً لعروض السجل</p>
+        </div>
+        <button id="closeSidebar" class="close-btn" aria-label="إغلاق القائمة">×</button>
+      </div>
+      <div id="accordion" class="accordion"></div>
+    </aside>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <main class="main-content">
+      <section class="cards">
+        <article class="card card-dev" data-category="Dev">
+          <div class="card-title">
+            <div>
+              <h2>Dev</h2>
+              <p>مسار التقنية</p>
+            </div>
+            <span class="badge">Dev</span>
+          </div>
+          <div class="card-metrics">
+            <div class="metric-row">
+              <span>آخر نشاط</span>
+              <span id="dev-last-activity">-</span>
+            </div>
+            <div class="metric-row">
+              <span>التقدم</span>
+              <span id="dev-progress-label">0%</span>
+            </div>
+            <div class="progress-bar">
+              <span id="dev-progress-fill" class="progress-fill"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-creative" data-category="Creative">
+          <div class="card-title">
+            <div>
+              <h2>Creative</h2>
+              <p>مسار الإبداع</p>
+            </div>
+            <span class="badge">Creative</span>
+          </div>
+          <div class="card-metrics">
+            <div class="metric-row">
+              <span>آخر نشاط</span>
+              <span id="creative-last-activity">-</span>
+            </div>
+            <div class="metric-row">
+              <span>التقدم</span>
+              <span id="creative-progress-label">0%</span>
+            </div>
+            <div class="progress-bar">
+              <span id="creative-progress-fill" class="progress-fill"></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-homelab" data-category="HomeLab">
+          <div class="card-title">
+            <div>
+              <h2>HomeLab</h2>
+              <p>مسار المختبر المنزلي</p>
+            </div>
+            <span class="badge">HomeLab</span>
+          </div>
+          <div class="card-metrics">
+            <div class="metric-row">
+              <span>آخر نشاط</span>
+              <span id="homelab-last-activity">-</span>
+            </div>
+            <div class="metric-row">
+              <span>التقدم</span>
+              <span id="homelab-progress-label">0%</span>
+            </div>
+            <div class="progress-bar">
+              <span id="homelab-progress-fill" class="progress-fill"></span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="timeline-section">
+        <div class="timeline-header">
+          <div>
+            <h2>التقويم العكسي</h2>
+            <p id="timeline-subtitle">عرض جميع الملفات العامة مرتبة من الأحدث للأقدم</p>
+          </div>
+          <div class="timeline-controls">
+            <input type="text" id="searchInput" placeholder="البحث في الملفات..." class="search-input">
+            <select id="dateFilter" class="date-filter">
+              <option value="all">جميع التواريخ</option>
+              <option value="today">اليوم</option>
+              <option value="week">هذا الأسبوع</option>
+              <option value="month">هذا الشهر</option>
+            </select>
+            <button id="showAllBtn" class="pill active">عرض الجميع</button>
+          </div>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+{
+  "generatedAt": "2026-04-27T08:13:43.766Z",
+  "files": [
+    {
+      "path": "logs/Creative/Projects/design-system.md",
+      "url": "logs/Creative/Projects/design-system.md",
+      "frontmatter": {
+        "title": "نظام التصميم",
+        "category": "Creative",
+        "progress": 60,
+        "public": true,
+        "date": "2026-04-22",
+        "description": "بناء مكتبة مكونات وألوان موحدة",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/Creative/Projects/ui-mockups.md",
+      "url": "logs/Creative/Projects/ui-mockups.md",
+      "frontmatter": {
+        "title": "تصاميم الواجهة",
+        "category": "Creative",
+        "progress": 75,
+        "public": true,
+        "date": "2026-04-26",
+        "description": "تصاميم الشاشات والتفاعلات",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/HomeLab/Infrastructure/backup-strategy.md",
+      "url": "logs/HomeLab/Infrastructure/backup-strategy.md",
+      "frontmatter": {
+        "title": "استراتيجية النسخ الاحتياطي",
+        "category": "HomeLab",
+        "progress": 40,
+        "public": false,
+        "date": "2026-04-19",
+        "description": "نسخ احتياطي يومية وأسبوعية وشهرية",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/HomeLab/Infrastructure/monitoring.md",
+      "url": "logs/HomeLab/Infrastructure/monitoring.md",
+      "frontmatter": {
+        "title": "نظام المراقبة",
+        "category": "HomeLab",
+        "progress": 70,
+        "public": true,
+        "date": "2026-04-24",
+        "description": "مراقبة الخدمات والموارد الحية",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/HomeLab/Infrastructure/server-setup.md",
+      "url": "logs/HomeLab/Infrastructure/server-setup.md",
+      "frontmatter": {
+        "title": "إعداد الخادم",
+        "category": "HomeLab",
+        "progress": 50,
+        "public": true,
+        "date": "2026-04-18",
+        "description": "تثبيت Docker و Kubernetes على الخادم المحلي",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/dev/home/api-integration.md",
+      "url": "logs/dev/home/api-integration.md",
+      "frontmatter": {
+        "title": "تكامل GitHub API",
+        "category": "Dev",
+        "progress": 30,
+        "public": true,
+        "date": "2026-04-20",
+        "description": "دمج استدعاءات GitHub لجلب البيانات ديناميكياً",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/dev/home/environment-setup.md",
+      "url": "logs/dev/home/environment-setup.md",
+      "frontmatter": {
+        "title": "إعداد البيئة",
+        "category": "Dev",
+        "progress": 45,
+        "public": true,
+        "date": "2026-04-25",
+        "description": "تثبيت الأدوات الأساسية والمكتبات",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/dev/home/home.01.md",
+      "url": "logs/dev/home/home.01.md",
+      "frontmatter": {
+        "title": "home.01",
+        "category": "Dev/Home",
+        "progress": 45,
+        "public": true,
+        "date": "2026-04-27",
+        "description": "",
+        "tags": [
+          "coding",
+          "ui"
+        ],
+        "status": "ongoing"
+      }
+    },
+    {
+      "path": "logs/dev/home/stage-02.md",
+      "url": "logs/dev/home/stage-02.md",
+      "frontmatter": {
+        "title": "stage-02",
+        "category": "",
+        "progress": 0,
+        "public": true,
+        "date": null,
+        "description": "",
+        "tags": [],
+        "status": "unknown"
+      }
+    },
+    {
+      "path": "logs/dev/home/test-02.md",
+      "url": "logs/dev/home/test-02.md",
+      "frontmatter": {
+        "title": "test-02",
+        "category": "Dev/Home",
+        "progress": 45,
+        "public": true,
+        "date": "2026-04-27",
+        "description": "",
+        "tags": [
+          "coding",
+          "ui"
+        ],
+        "status": "ongoing"
+      }
+    },
+    {
+      "path": "logs/dev/home/watcher-dashboard.md",
+      "url": "logs/dev/home/watcher-dashboard.md",
+      "frontmatter": {
+        "title": "لوحة التحكم Watcher",
+        "category": "Dev",
+        "progress": 85,
+        "public": true,
+        "date": "2026-04-27",
+        "description": "بناء الواجهة الأمامية للعرض الموبايل",
+        "tags": [],
+        "status": "unknown"
+      }
+    }
+  ]
+}
