@@ -305,11 +305,15 @@ function renderTimeline(files, branchPath = null) {
     
     // Search filter
     if (currentSearch) {
-      const searchLower = currentSearch.toLowerCase();
-      const titleMatch = file.title.toLowerCase().includes(searchLower);
-      const descMatch = file.description.toLowerCase().includes(searchLower);
-      const categoryMatch = file.category.toLowerCase().includes(searchLower);
-      if (!titleMatch && !descMatch && !categoryMatch) return false;
+      const normalizedSearch = currentSearch.trim().replace(/^#/, '').toLowerCase();
+      const titleMatch = file.title.toLowerCase().includes(normalizedSearch);
+      const descMatch = file.description.toLowerCase().includes(normalizedSearch);
+      const categoryMatch = file.category.toLowerCase().includes(normalizedSearch);
+      const pathMatch = file.path.toLowerCase().includes(normalizedSearch);
+      const tagsMatch = Array.isArray(file.tags)
+        ? file.tags.some((tag) => String(tag).toLowerCase().includes(normalizedSearch))
+        : false;
+      if (!titleMatch && !descMatch && !categoryMatch && !pathMatch && !tagsMatch) return false;
     }
     
     return true;
